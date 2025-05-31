@@ -4,19 +4,19 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import React, { useCallback, useState } from "react";
 import {
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from "react-native";
 import {
-  DoseHistory,
-  getDoseHistory,
-  getMedications,
-  Medication,
-  recordDose,
+    DoseHistory,
+    getDoseHistory,
+    getMedications,
+    Medication,
+    recordDose,
 } from "../../utils/storage";
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -90,7 +90,7 @@ export default function CalendarScreen() {
         >
           {isToday && (
             <LinearGradient
-              colors={["#4F9ADD", "#1976D2"]}
+              colors={["#0071E3", "#2997FF"]}
               style={styles.todayGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
@@ -142,7 +142,7 @@ export default function CalendarScreen() {
           </View>
           {taken ? (
             <LinearGradient
-              colors={["#4F9ADD", "#1976D2"]}
+              colors={["#0071E3", "#2997FF"]}
               style={styles.takenBadge}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
@@ -172,7 +172,7 @@ export default function CalendarScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#4F9ADD", "#4F9ADD"]}
+        colors={["#0071E3", "#2997FF"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -184,7 +184,7 @@ export default function CalendarScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#4F9ADD" />
+            <Ionicons name="chevron-back" size={28} color="#0071E3" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Calendar</Text>
         </View>
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     width: 4,
     height: 4,
     borderRadius: 2,
-    backgroundColor: "#4F9ADD",
+    backgroundColor: "#0071E3",
     position: "absolute",
     bottom: "15%",
   },
@@ -438,7 +438,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   takenText: {
-    color: "#4F9ADD",
+    color: "#0071E3",
     fontWeight: "600",
     fontSize: 14,
     marginLeft: 4,

@@ -4,18 +4,18 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import React, { useCallback, useState } from "react";
 import {
-  Alert,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    Alert,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from "react-native";
 import {
-  getMedications,
-  Medication,
-  updateMedication,
+    getMedications,
+    Medication,
+    updateMedication,
 } from "../../utils/storage";
 
 export default function RefillTrackerScreen() {
@@ -85,7 +85,7 @@ export default function RefillTrackerScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#4F9ADD", "#4F9ADD"]}
+        colors={["#0071E3", "#2997FF"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -97,7 +97,7 @@ export default function RefillTrackerScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#4F9ADD" />
+            <Ionicons name="chevron-back" size={28} color="#0071E3" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Refill Tracker</Text>
         </View>
@@ -142,7 +142,7 @@ export default function RefillTrackerScreen() {
                     </View>
                     {supplyStatus.status === "Good" ? (
                       <LinearGradient
-                        colors={["#4F9ADD", "#1976D2"]}
+                        colors={["#0071E3", "#2997FF"]}
                         style={styles.statusBadge}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 1, y: 0 }}
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   addButton: {
-    backgroundColor: "#4F9ADD",
+    backgroundColor: "#0071E3",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 20,

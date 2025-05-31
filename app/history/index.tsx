@@ -108,7 +108,7 @@ export default function HistoryScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#4F9ADD", "#4F9ADD"]}
+        colors={["#0071E3", "#2997FF"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -120,7 +120,7 @@ export default function HistoryScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#4F9ADD" />
+            <Ionicons name="chevron-back" size={28} color="#0071E3" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>History Log</Text>
         </View>
@@ -135,7 +135,7 @@ export default function HistoryScreen() {
                 selectedFilter === filter ? (
                   <LinearGradient
                     key={filter}
-                    colors={["#4F9ADD", "#1976D2"]}
+                    colors={["#0071E3", "#2997FF"]}
                     style={styles.filterButton}
                     start={{ x: 0, y: 0 }}
                     end={{ x: 1, y: 0 }}
@@ -202,7 +202,7 @@ export default function HistoryScreen() {
                   <View style={styles.statusContainer}>
                     {dose.taken ? (
                       <LinearGradient
-                        colors={["#4F9ADD", "#1976D2"]}
+                        colors={["#0071E3", "#2997FF"]}
                         style={styles.statusBadge}
                         start={{ x: 0, y: 0 }}
                         end={{ x: 1, y: 0 }}
@@ -311,8 +311,8 @@ const styles = StyleSheet.create({
     borderColor: "#e0e0e0",
   },
   filterButtonActive: {
-    backgroundColor: "#4F9ADD",
-    borderColor: "#4F9ADD",
+    backgroundColor: "#0071E3",
+    borderColor: "#0071E3",
   },
   filterText: {
     fontSize: 14,
@@ -344,7 +344,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,

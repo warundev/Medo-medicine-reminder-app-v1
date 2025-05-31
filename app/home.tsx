@@ -38,29 +38,29 @@ const QUICK_ACTIONS = [
     icon: "add-circle-outline" as const,
     label: "Add\nMedication",
     route: "/medications/add" as const,
-    color: "#4F9ADD",
-    gradient: ["#4F9ADD", "#4F9ADD"] as [string, string],
+    color: "#0071E3",
+    gradient: ["#0071E3", "#2997FF"] as [string, string],// Blue gradient
   },
   {
     icon: "calendar-outline" as const,
     label: "Calendar\nView",
     route: "/calendar" as const,
-    color: "#1976D2",
-    gradient: ["#2196F3", "#1976D2"] as [string, string],
+    color: "#25D366",
+    gradient: ["#25D366", "#128C7E"] as [string, string],// Green gradient
   },
   {
     icon: "time-outline" as const,
     label: "History\nLog",
     route: "/history" as const,
-    color: "#C2185B",
-    gradient: ["#E91E63", "#C2185B"] as [string, string],
+    color: "#833AB4",
+    gradient: ["#1D1D1F", "#3A3A3C", "#636366"] as [string, string, string], // Dark gray gradient
   },
   {
     icon: "medical-outline" as const,
     label: "Refill\nTracker",
     route: "/refills" as const,
-    color: "#E64A19",
-    gradient: ["#FF5722", "#E64A19"] as [string, string],
+    color: "#FF9800",
+    gradient: ["#FF9800", "#FF5722"] as [string, string], // Orange gradient
   },
 ];
 
@@ -250,7 +250,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <LinearGradient colors={["#4F9ADD", "#3B7EC4"]} style={styles.header}>
+      <LinearGradient colors={["#0071E3", "#2997FF"]} style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.headerTop}>
             <View style={styles.flex1}>
@@ -354,7 +354,7 @@ export default function HomeScreen() {
                   </View>
                   {taken ? (
                     <LinearGradient
-                      colors={["#4F9ADD", "#1976D2"]}
+                      colors={["#0071E3", "#2997FF"]}
                       style={styles.takenBadge}
                       start={{ x: 0, y: 0 }}
                       end={{ x: 1, y: 0 }}
@@ -509,7 +509,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   seeAllButton: {
-    color: "#4F9ADD",
+    color: "#0071E3",
     fontWeight: "600",
   },
   doseCard: {
@@ -613,7 +613,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 2,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     paddingHorizontal: 4,
   },
   notificationCount: {
@@ -700,7 +700,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   addMedicationButton: {
-    backgroundColor: "#4F9ADD",
+    backgroundColor: "#0071E3",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 20,
@@ -716,7 +716,7 @@ const styles = StyleSheet.create({
     // For 'Taken' badge, use a gradient in the JSX
   },
   takenText: {
-    color: "#4F9ADD",
+    color: "#0071E3",
     fontWeight: "600",
     fontSize: 14,
     marginLeft: 4,

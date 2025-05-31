@@ -1,4 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { useEffect, useRef } from "react";
 import { Animated, StyleSheet, Text, View } from "react-native";
@@ -30,8 +31,13 @@ export default function SplashScreen() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Use the container style for centering
   return (
     <View style={styles.container}>
+      <LinearGradient
+        colors={["#0071E3", "#2997FF"]}
+        style={StyleSheet.absoluteFill}
+      />
       <Animated.View
         style={[
           styles.iconContainer,
@@ -52,18 +58,18 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#4F9ADD",
     alignItems: "center",
     justifyContent: "center",
   },
   iconContainer: {
     alignItems: "center",
+    // Removed marginTop to allow perfect vertical centering
   },
   appName: {
     color: "white",
     fontSize: 32,
     fontWeight: "bold",
-    marginTop: 20,
+    marginTop: 8, // Reduce margin to keep name closer to logo
     letterSpacing: 1,
   },
   subName: {

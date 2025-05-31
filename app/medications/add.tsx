@@ -4,20 +4,20 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import {
-  Alert,
-  Dimensions,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Switch,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View
+    Alert,
+    Dimensions,
+    Platform,
+    ScrollView,
+    StyleSheet,
+    Switch,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View
 } from "react-native";
 import {
-  scheduleMedicationReminder,
-  scheduleRefillReminder,
+    scheduleMedicationReminder,
+    scheduleRefillReminder,
 } from "../../utils/notifications";
 import { addMedication } from "../../utils/storage";
 
@@ -129,7 +129,7 @@ export default function AddMedicationScreen() {
       setIsSubmitting(true);
 
       // Generate a random color
-      const colors = ["#4F9ADD", "#2196F3", "#FF9800", "#E91E63", "#9C27B0"];
+      const colors = ["#0071E3", "#2196F3", "#FF9800", "#E91E63", "#9C27B0"];
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
 
       const medicationData = {
@@ -278,7 +278,7 @@ export default function AddMedicationScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#4F9ADD", "#4F9ADD"]}
+        colors={["#0071E3", "#2997FF"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -290,7 +290,7 @@ export default function AddMedicationScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#4F9ADD" />
+            <Ionicons name="chevron-back" size={28} color="#0071E3" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>New Medication</Text>
         </View>
@@ -357,7 +357,7 @@ export default function AddMedicationScreen() {
               onPress={() => setShowDatePicker(true)}
             >
               <View style={styles.dateIconContainer}>
-                <Ionicons name="calendar" size={20} color="#4F9ADD" />
+                <Ionicons name="calendar" size={20} color="#0071E3" />
               </View>
               <Text style={styles.dateButtonText}>
                 Starts {form.startDate.toLocaleDateString()}
@@ -388,7 +388,7 @@ export default function AddMedicationScreen() {
                     }}
                   >
                     <View style={styles.timeIconContainer}>
-                      <Ionicons name="time-outline" size={20} color="#4F9ADD" />
+                      <Ionicons name="time-outline" size={20} color="#0071E3" />
                     </View>
                     <Text style={styles.timeButtonText}>{time}</Text>
                     <Ionicons name="chevron-forward" size={20} color="#666" />
@@ -430,7 +430,7 @@ export default function AddMedicationScreen() {
               <View style={styles.switchRow}>
                 <View style={styles.switchLabelContainer}>
                   <View style={styles.iconContainer}>
-                    <Ionicons name="notifications" size={20} color="#4F9ADD" />
+                    <Ionicons name="notifications" size={20} color="#0071E3" />
                   </View>
                   <View>
                     <Text style={styles.switchLabel}>Reminders</Text>
@@ -444,7 +444,7 @@ export default function AddMedicationScreen() {
                   onValueChange={(value) =>
                     setForm({ ...form, reminderEnabled: value })
                   }
-                  trackColor={{ false: "#ddd", true: "#4F9ADD" }}
+                  trackColor={{ false: "#ddd", true: "#0071E3" }}
                   thumbColor="white"
                 />
               </View>
@@ -457,7 +457,7 @@ export default function AddMedicationScreen() {
               <View style={styles.switchRow}>
                 <View style={styles.switchLabelContainer}>
                   <View style={styles.iconContainer}>
-                    <Ionicons name="reload" size={20} color="#4F9ADD" />
+                    <Ionicons name="reload" size={20} color="#0071E3" />
                   </View>
                   <View>
                     <Text style={styles.switchLabel}>Refill Tracking</Text>
@@ -478,7 +478,7 @@ export default function AddMedicationScreen() {
                       });
                     }
                   }}
-                  trackColor={{ false: "#ddd", true: "#4F9ADD" }}
+                  trackColor={{ false: "#ddd", true: "#0071E3" }}
                   thumbColor="white"
                 />
               </View>
@@ -562,7 +562,7 @@ export default function AddMedicationScreen() {
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={["#4F9ADD", "#4F9ADD"]}
+              colors={["#0071E3", "#2997FF"]}
               style={styles.saveButtonGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
@@ -661,7 +661,7 @@ const styles = StyleSheet.create({
     margin: 5,
     alignItems: "center",
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
@@ -669,8 +669,8 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   selectedOptionCard: {
-    backgroundColor: "#4F9ADD",
-    borderColor: "#4F9ADD",
+    backgroundColor: "#0071E3",
+    borderColor: "#0071E3",
   },
   optionIcon: {
     width: 50,
@@ -696,7 +696,7 @@ const styles = StyleSheet.create({
   durationNumber: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#4F9ADD",
+    color: "#0071E3",
     marginBottom: 5,
   },
   selectedDurationNumber: {
@@ -707,7 +707,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     marginBottom: 12,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
@@ -722,7 +722,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginTop: 15,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
@@ -748,7 +748,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     padding: 20,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
@@ -801,7 +801,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
@@ -881,7 +881,7 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: "#4F9ADD",
+    borderColor: "#0071E3",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
