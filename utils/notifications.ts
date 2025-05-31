@@ -146,9 +146,3 @@ export async function updateMedicationReminders(
     console.error("Error updating medication reminders:", error);
   }
 }
-
-"extra": {
-  "eas": {
-    "projectId": "933e3fe7-e33e-4dd7-9ac3-5bcd51ef2bbf"
-  }
-}
