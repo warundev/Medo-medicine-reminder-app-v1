@@ -250,7 +250,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <LinearGradient colors={["#4F9ADD", "#4F9ADD"]} style={styles.header}>
+      <LinearGradient colors={["#4F9ADD", "#3B7EC4"]} style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.headerTop}>
             <View style={styles.flex1}>
@@ -337,7 +337,7 @@ export default function HomeScreen() {
                     ]}
                   >
                     <Ionicons
-                      name="medical"
+                      name="medkit"
                       size={24}
                       color={medication.color}
                     />

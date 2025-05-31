@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "medo-medicine-reminder-app",
-    "slug": "medo-medicine-reminder-app",
+    "slug": "medo-medicine-reminder-app-v1",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,8 +12,15 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSUserNotificationUsageDescription": "This app uses notifications to remind you to take your medication.",
-        "UIBackgroundModes": ["remote-notification", "fetch"]
-      }
+        "UIBackgroundModes": [
+          "remote-notification",
+          "fetch",
+          "remote-notification",
+          "fetch"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "Medo"
     },
     "android": {
       "adaptiveIcon": {
@@ -43,10 +50,11 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {},
       "eas": {
-        "projectId": "933e3fe7-e33e-4dd7-9ac3-5bcd51ef2bbf"
-      }
-    }
+        "projectId": "f5031467-5e7c-4ae5-888a-2a6c6083647f"
+      },
+      "router": {}
+    },
+    "owner": "warundev"
   }
 }

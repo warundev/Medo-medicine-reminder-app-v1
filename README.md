@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# 💊 Medo – Your Smart Medicine Minder
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform React Native app built with Expo to help users manage their medication schedules, track refills, and monitor daily progress — all while ensuring secure and smooth user experience.
 
-## Get started
+---
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+## 📱 App Features
 
-   ```bash
-    npx expo start
-   ```
+- 🔔 **Custom Medication Reminders**  
+  Schedule daily or one-time medicine reminders with flexible timing.
 
-In the output, you'll find options to open the app in a
+- 💊 **Refill Tracking & Alerts**  
+  Track your medicine supply and receive alerts when you're running low.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- 🧬 **Biometric Authentication**  
+  Enable Face ID / Touch ID for secure app access.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📈 **Daily Progress & History Logging**  
+  Visualize your medication adherence and view historical logs.
 
-## Get a fresh project
+- 🗓️ **Calendar Integration**  
+  Plan and manage medication intake via a built-in calendar view.
 
-When you're ready, run:
+- 📦 **Local Data Persistence**  
+  All data is securely stored locally using AsyncStorage.
+
+- 🌐 **Cross-Platform Compatibility**  
+  Runs smoothly on both **iOS** and **Android**.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology               | Usage                                      |
+|--------------------------|---------------------------------------------|
+| [React Native](https://reactnative.dev/)     | Cross-platform mobile app framework         |
+| [Expo](https://expo.dev/)                    | App tooling and build support               |
+| [TypeScript](https://www.typescriptlang.org/)| Strong typing for better code safety        |
+| [React Navigation](https://reactnavigation.org/) | Smooth navigation system              |
+| [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/) | Push notification system |
+| [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) | Persistent local storage    |
+| [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) | Smooth animations       |
+
+---
+
+## 🎓 What You'll Learn (If you're studying this project)
+
+- React Native fundamentals and file-based routing
+- Using Expo and TypeScript for clean development
+- Implementing push notifications and local reminders
+- Integrating biometric authentication (Face ID / Touch ID)
+- Managing local storage with AsyncStorage
+- Calendar-based scheduling and dose tracking UI
+- Designing mobile-friendly, clean, and accessible UI
+
+---
+
+
+## 🙌 Contribute
+
+Found a bug or want to suggest a feature? Open an [issue](https://github.com/mendsalbert/medici-reminder-app/issues) or submit a PR!
+
+Give this repo a ⭐ if you find it useful!
+
+---
+
+## 📸 Screenshots
+
+> _(Add screenshots or app UI mockups here if available!)_
+
+
+## 📱 Developed With ❤️ Using React Native + Expo
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone https://github.com/your-username/medo
+cd medo

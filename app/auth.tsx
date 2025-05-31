@@ -67,7 +67,7 @@ export default function AuthScreen() {
     <LinearGradient colors={["#4F9ADD", "#4F9ADD"]} style={styles.container}>
       <View style={styles.content}>
         <View style={styles.iconContainer}>
-          <Ionicons name="medical" size={80} color="white" />
+          <Ionicons name="medkit" size={80} color="white" />
         </View>
 
         <Text style={styles.title}>Medo</Text>

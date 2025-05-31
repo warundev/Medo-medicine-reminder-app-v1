@@ -41,7 +41,7 @@ export default function SplashScreen() {
           },
         ]}
       >
-        <Ionicons name="medical" size={100} color="white" />
+        <Ionicons name="medkit" size={100} color="white" />
         <Text style={styles.appName}>Medo</Text>
         <Text style={styles.subName}>Your Smart Medicine Minder</Text>
       </Animated.View>
